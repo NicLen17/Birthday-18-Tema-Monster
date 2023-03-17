@@ -63,11 +63,10 @@ const countDown4 = (deadline, elem, finalMesssage) => {
     }, 1000)
 };
 
-
-countDown('Apr 23 2023 20:40:48 GMT-0300', 'clock', 'Feliz cumple rey');
-countDown2('Apr 23 2023 20:40:48 GMT-0300', 'clock2', 'Feliz cumple rey');
-countDown3('Apr 23 2023 20:40:48 GMT-0300', 'clock3', 'Feliz cumple rey');
-countDown4('Apr 23 2023 20:40:48 GMT-0300', 'clock4', 'Feliz cumple rey');
+countDown('Apr 21 2023 23:59:59 GMT-0300', 'clock', 'Feliz');
+countDown2('Apr 21 2023 23:59:59 GMT-0300', 'clock2', 'cumple');
+countDown3('Apr 21 2023 23:59:59 GMT-0300', 'clock3', 'rey');
+countDown4('Apr 21 2023 23:059:59 GMT-0300', 'clock4', '!!!');
 
 // Active class nav
 

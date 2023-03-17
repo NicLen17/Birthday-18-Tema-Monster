@@ -56,7 +56,7 @@ html {
 }
 
 .Nav-item {
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: #ffffff;
     padding: 1rem;
     text-decoration: none !important;
@@ -84,8 +84,8 @@ html {
     display: flex;
     margin: auto;
     margin-top: 50px;
+    width: 60%;
     margin-bottom: 150px;
-    width: 50%;
     border: #95d600 5px solid;
     border-radius: 3px;
     -webkit-box-shadow: 0px 0px 23px 2px rgba(149, 214, 0, 0.79);
@@ -107,7 +107,7 @@ html {
 }
 
 .Countdown {
-    height: 700px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +142,7 @@ html {
     box-shadow: 0px 0px 23px 2px rgba(149, 214, 0, 0.79);
     margin-left: -150px;
     margin-right: -150px;
-    scroll-margin-top: 250px;
+    scroll-margin-top: 350px;
 }
 
 .Dias {
@@ -152,7 +152,7 @@ html {
     -webkit-text-stroke-width: calc(1em / 16);
     -webkit-background-clip: text;
     color: black;
-    font-size: 20vmin;
+    font-size: 15vmin;
     font-weight: 700;
     padding: calc(calc(1em / 16) / 2);
 }
@@ -166,7 +166,7 @@ html {
     -webkit-text-stroke-width: calc(1em / 16);
     -webkit-background-clip: text;
     color: black;
-    font-size: 18vmin;
+    font-size: 13vmin;
     font-weight: 700;
     padding: calc(calc(1em / 16) / 2);
 }
@@ -310,9 +310,11 @@ html {
 .Ubicacion img {
     margin: auto;
     width: 100%;
-    height: 100%;
+    height: 500px;
+    object-fit: contain;
     border: 5px #95d600 solid;
     transition: 0.3s;
+    background-color: #000;
 }
 
 .Ubicacion img:hover {
