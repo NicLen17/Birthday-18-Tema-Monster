@@ -19,7 +19,7 @@
     border-radius: 10px;
 }
 
-html {
+body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: linear-gradient(-45deg, #95d600, #000000, #000000, #95d600);
@@ -30,14 +30,8 @@ html {
     margin-left: 150px;
     margin-right: 150px;
     scroll-behavior: smooth;
-}
-
-.Body-cont {
-    background: linear-gradient(-45deg, #95d600, #000000, #000000, #95d600);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    border: none;
+    overflow-x: hidden;
 }
 
 @keyframes gradient {
@@ -60,17 +54,18 @@ html {
 }
 
 .Nav-item {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     color: #ffffff;
     padding: 1rem;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
     text-decoration: none !important;
     transition: 0.5s;
 }
 
 .Nav-item.active {
     border-bottom: 3px solid #95d600;
+    background: linear-gradient(to bottom, #000, #0003 10%, #0000);
 }
 
 .Nav-item:hover {
@@ -442,11 +437,33 @@ html {
     }
 }
 
-
 @media only screen and (max-width: 600px) {
     .Nav  {
-        margin: 0px;
-        flex-direction: column;
-        font-size: 1px;
+        background-color: black;
+        border-bottom: #95d600 1px solid;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Nav-img  {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Nav-item  {
+        margin: auto !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Boton-nav  {
+        margin: auto !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Footer  {
+        display: none;
     }
 }
