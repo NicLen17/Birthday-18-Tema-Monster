@@ -392,6 +392,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    .Confirmacion button {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .Mensaje span {
         display: none;
     }
