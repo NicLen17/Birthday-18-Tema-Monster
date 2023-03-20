@@ -19,43 +19,7 @@ const countDown = (deadline, elem, finalMesssage) => {
     const el = document.getElementById(elem);
     const timerUpdate = setInterval(() => {
         let time = getRemainTime(deadline);
-        el.innerHTML = `${time.remainDays}`;
-        if (time.remainTime <= 1) {
-            clearInterval(timerUpdate);
-            el.innerHTML = finalMesssage;
-        }
-    }, 1000)
-};
-
-const countDown2 = (deadline, elem, finalMesssage) => {
-    const el = document.getElementById(elem);
-    const timerUpdate = setInterval(() => {
-        let time = getRemainTime(deadline);
-        el.innerHTML = `:${time.remainHours}:`;
-        if (time.remainTime <= 1) {
-            clearInterval(timerUpdate);
-            el.innerHTML = finalMesssage;
-        }
-    }, 1000)
-};
-
-const countDown3 = (deadline, elem, finalMesssage) => {
-    const el = document.getElementById(elem);
-    const timerUpdate = setInterval(() => {
-        let time = getRemainTime(deadline);
-        el.innerHTML = `${time.remainMinutes}:`;
-        if (time.remainTime <= 1) {
-            clearInterval(timerUpdate);
-            el.innerHTML = finalMesssage;
-        }
-    }, 1000)
-};
-
-const countDown4 = (deadline, elem, finalMesssage) => {
-    const el = document.getElementById(elem);
-    const timerUpdate = setInterval(() => {
-        let time = getRemainTime(deadline);
-        el.innerHTML = `${time.remainSeconds}`;
+        el.innerHTML = `${time.remainDays}:${time.remainHours}:${time.remainMinutes}:${time.remainSeconds}`;
         if (time.remainTime <= 1) {
             clearInterval(timerUpdate);
             el.innerHTML = finalMesssage;
@@ -64,9 +28,6 @@ const countDown4 = (deadline, elem, finalMesssage) => {
 };
 
 countDown('Apr 21 2023 23:59:59 GMT-0300', 'clock', 'Feliz');
-countDown2('Apr 21 2023 23:59:59 GMT-0300', 'clock2', 'cumple');
-countDown3('Apr 21 2023 23:59:59 GMT-0300', 'clock3', 'rey');
-countDown4('Apr 21 2023 23:059:59 GMT-0300', 'clock4', '!!!');
 
 // Active class nav
 
