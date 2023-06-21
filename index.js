@@ -27,7 +27,7 @@ const countDown = (deadline, elem, finalMesssage) => {
     }, 1000)
 };
 
-countDown('Apr 21 2023 23:59:59 GMT-0300', 'clock', 'Feliz Cumpleaños!');
+countDown('Jul 2 2023 23:59:59 GMT-0300', 'clock', 'Feliz Cumpleaños!');
 
 // Active class nav
 
